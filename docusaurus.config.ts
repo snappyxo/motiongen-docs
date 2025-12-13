@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'MotionGen',
   tagline: 'Advanced Motion Generation and Robotics Framework',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -69,44 +69,22 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {
-          href: 'https://github.com/snappyxo/motiongen',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Robotic Platform',
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/intro',
-            },
-            {
-              label: 'API Reference',
-              to: '/docs/api',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/snappyxo/motiongen',
-            },
-            {
-              label: 'Issues',
-              href: 'https://github.com/snappyxo/motiongen/issues',
+              label: 'SnappyXO',
+              href: 'http://www.snappyxo.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} MotionGen. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MotionGen. Please contact <a href="mailto:anurag.purwar@stonybrook.edu">Dr. Anurag Purwar</a> for any questions about this document.`,
     },
     prism: {
       theme: prismThemes.github,
