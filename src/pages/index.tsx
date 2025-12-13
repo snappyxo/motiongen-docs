@@ -28,7 +28,7 @@ function HomepageHeader() {
             )}
             to="/docs/intro"
           >
-            MotionGen Documentation
+            MotionGen Manual
           </Link>
           <Link
             className={clsx(
