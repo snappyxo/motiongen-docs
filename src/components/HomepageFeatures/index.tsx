@@ -9,7 +9,7 @@ export default function HomepageFeatures(): ReactNode {
         <div className={styles.subContainer}>
           <img
             className={styles.animation}
-            src={require('@site/static/gif/homepage_animation.gif').default}
+            src={require('@site/static/gif/homepage-animation.gif').default}
           ></img>
           <p>
             MotionGen is a planar mechanism design and simulation software part
