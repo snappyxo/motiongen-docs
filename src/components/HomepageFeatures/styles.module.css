@@ -1,11 +1,17 @@
-.features {
+.centeredColumn {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.subContainer {
+  max-width: 50rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.animation {
+  width: 100%;
+  margin-bottom: 2rem;
 }
