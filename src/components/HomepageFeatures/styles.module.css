@@ -19,4 +19,9 @@
 
 .logoGrid {
   align-items: center;
+  background-color: white;
+}
+
+.logoGrid img {
+  display: block;
 }
