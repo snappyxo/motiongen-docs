@@ -28,3 +28,9 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.yellow-border {
+  border: 0.2rem solid #ffd700;
+  border-radius: 8px;
+  padding: 0.5rem;
+}

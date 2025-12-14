@@ -20,18 +20,22 @@ MotionGen began its journey as an iOS app developed in 2010 in the Computer-Aide
 ## Shop SnappyXO Kits
 
 Another Mechanismic creation accompanying MotionGen is the SnappyXO robotics kits. You can visit [snappyxo.com](https://www.snappyxo.com) and learn more about the SnappyXO kits.
-![snappyxo store](./img/snappyxo-store.gif)
+
+<div class="yellow-border">
+  ![snappyxo store](./img/snappyxo-store.gif)
+</div>
+<br />
 
 Some of the projects that can be built with the SnappyXO kits are shown below. Instructions for projects are available at [snappyxo.io](https://snappyxo.io).
 
-  <div class="row">
-    <div class="col col--4">
+<div class="row">
+  <div class="col col--4">
     ![project example 1](./img/project-example-1.png)
-    </div>
-    <div class="col col--4">
-    ![project example 2](./img/project-example-2.png)
-    </div>
-    <div class="col col--4">
-    ![project example 3](./img/project-example-3.png)
-    </div>
   </div>
+  <div class="col col--4">
+    ![project example 2](./img/project-example-2.png)
+  </div>
+  <div class="col col--4">
+    ![project example 3](./img/project-example-3.png)
+  </div>
+</div>
