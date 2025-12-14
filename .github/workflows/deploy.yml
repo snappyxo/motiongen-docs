@@ -4,6 +4,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'src/**'
+      - 'static/**'
+      - 'docusaurus.config.ts'
+      - 'sidebars.ts'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy.yml'
 
 permissions:
   contents: write
