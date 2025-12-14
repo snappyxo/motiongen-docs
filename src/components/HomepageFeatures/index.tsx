@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
-      <div className={clsx('container', styles.centeredColumn)}>
+      <div className={clsx('container', styles.mainContainer)}>
         <div className={styles.subContainer}>
           <img
             className={styles.animation}
@@ -17,6 +17,21 @@ export default function HomepageFeatures(): ReactNode {
             University and Mechanismic Inc. with the funding from the National
             Science Foundation via STTR Phase I and Phase 2 awards.
           </p>
+          <div className={clsx('row', styles.logoGrid)}>
+            <div className="col col--4">
+              <img src={require('@site/static/img/sbu-logo.png').default}></img>
+            </div>
+            <div className="col col--4">
+              <img
+                src={require('@site/static/img/sbir-logo.png').default}
+              ></img>
+            </div>
+            <div className="col col--4">
+              <img
+                src={require('@site/static/img/snappyxo-logo.png').default}
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
     </section>
