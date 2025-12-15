@@ -12,7 +12,8 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "yzhang.markdown-all-in-one",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "unifiedjs.vscode-mdx"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
