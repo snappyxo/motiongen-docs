@@ -51,16 +51,17 @@ Once VS Code opens in your browser:
 
 ### Editing Files
 
-1. **Click on any `.md` file** to open it
+1. **Click on any `.mdx` file** to open it
 2. **Make your changes** (edit the text)
 3. **Save**: Press `Ctrl+S` (Windows) or `Cmd+S` (Mac)
 4. **Check your preview tab** - changes appear instantly! ⚡
 
 ### Common Files to Edit
 
-- `docs/intro/index.md` - Main introduction page
+- `docs/intro/index.mdx` - Main introduction page
 - `docs/first-steps/students-signup.md` - Student signup guide
-- `docs/first-steps/teachers-signup.md` - Teacher signup guide
+- `docs/first-steps/teachers-signup.mdx` - Teacher signup guide
+- `docs/making-your-first-mechanism/` - Mechanism design guides
 
 ---
 
@@ -99,20 +100,69 @@ Your changes should be live!
 ### Small Heading
 
 **Bold text**
-*Italic text*
+_Italic text_
 
 - Bullet point
 - Another point
 
 [Link text](https://example.com)
-
-![Image description](./img/image-name.png)
 ```
 
-### Adding Images
+### Using Custom Components
 
-1. Upload image to the same folder as your markdown file
-2. Reference it: `![Description](./img/image-name.png)`
+Our documentation has two special components for images and layouts:
+
+#### DocImage - For Images
+
+Upload images to `static/img/your-section/` folder, then use:
+
+```mdx
+{/* Simple image */}
+<DocImage
+  src="/img/your-section/image.png"
+  alt="description"
+/>
+
+{/* Centered with caption */}
+<DocImage
+  src="/img/your-section/image.png"
+  alt="description"
+  maxWidth="30rem"
+  caption="Image caption here"
+/>
+
+{/* With yellow border */}
+<DocImage
+  src="/img/your-section/image.png"
+  alt="description"
+  border={true}
+/>
+
+{/* Left or right aligned */}
+<DocImage
+  src="/img/your-section/image.png"
+  alt="description"
+  maxWidth="24rem"
+  align="left"
+/>
+```
+
+#### DocGrid - For Image Grids
+
+```mdx
+{/* 2-column grid */}
+<DocGrid columns={2} gap="1rem">
+  <DocImage src="/img/section/1.png" alt="..." />
+  <DocImage src="/img/section/2.png" alt="..." />
+</DocGrid>
+
+{/* 3-column grid */}
+<DocGrid columns={3} gap="1.5rem">
+  <DocImage src="/img/section/1.png" alt="..." />
+  <DocImage src="/img/section/2.png" alt="..." />
+  <DocImage src="/img/section/3.png" alt="..." />
+</DocGrid>
+```
 
 ### Stopping the Preview
 

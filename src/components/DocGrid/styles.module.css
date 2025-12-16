@@ -1,0 +1,10 @@
+.grid {
+  width: 100%;
+}
+
+/* Responsive: switch to 1 column on small screens */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
