@@ -30,18 +30,3 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-highlight-color: #ffed4e;
 }
-
-.yellow-border {
-  border: 0.2rem solid var(--border-highlight-color);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.yellow-border p {
-  margin-bottom: 0;
-}
-
-.yellow-border img {
-  width: 100%;
-  display: block;
-}
