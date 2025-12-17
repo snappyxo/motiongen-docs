@@ -34,14 +34,12 @@ export default function DocImage({
     }
   }
 
-  // Combine class names
-  const className = [styles.container, border ? styles.border : '']
-    .filter(Boolean)
-    .join(' ');
+  // Apply border class to img if needed
+  const imgClassName = border ? styles.border : '';
 
   return (
-    <div className={className} style={containerStyle}>
-      <img src={src} alt={alt} />
+    <div className={styles.container} style={containerStyle}>
+      <img className={imgClassName} src={src} alt={alt} />
       {caption && <p className={styles.caption}>{caption}</p>}
     </div>
   );
