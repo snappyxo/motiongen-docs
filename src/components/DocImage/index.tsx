@@ -26,7 +26,8 @@ export default function DocImage({
 
     // Apply margin based on alignment
     if (align === 'center') {
-      containerStyle.margin = '0 auto';
+      containerStyle.marginLeft = 'auto';
+      containerStyle.marginRight = 'auto';
     } else if (align === 'left') {
       containerStyle.marginRight = 'auto';
     } else if (align === 'right') {
