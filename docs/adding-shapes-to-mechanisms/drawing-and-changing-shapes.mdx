@@ -1,0 +1,100 @@
+---
+sidebar_position: 1
+---
+
+# Drawing and Changing Shapes
+
+Shapes add a personal element to your mechanisms and also enable you to export their designs for 3D printing or laser-cutting. These customized and compatible parts can augment your SnappyXO Robot kit hardware.
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/drawing-shapes.gif'}
+  alt="drawing shapes"
+  caption="Drawing Different shapes from the Shapes Panel"
+  border={true}
+/>
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/combining-shapes.gif'}
+  alt="combining shapes"
+  caption="Combining shapes using Multi-Select and the boolean operations from the Shapes Panel"
+  border={true}
+/>
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/shape-panel.png'}
+  alt="shape panel"
+  maxWidth="24rem"
+  caption="The Shape Panel"
+/>
+
+Selecting a single shape reveals the Shape Context menu using which you can change the color of the shape, duplicate them, or send them backward or forward. Sending them back or forward changes the order of the shape which is reflected in the change of their numbering. The order of the shapes has an impact on the boolean operations discussed next.
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/shape-toolbar.png'}
+  alt="shape toolbar"
+  maxWidth="24rem"
+  caption="The Shape Toolbar"
+/>
+
+## Operations on Shapes
+
+Once you draw two shapes, you can perform the following operations on them.
+
+### Merge
+
+1. Start by drawing a link of any size inside any shape.
+2. Use the Multi-Select option to select the shape and link and then use the _Merge with a link_ option to convert the shape into a link.
+3. This option creates a bonafide link with arbitrary shape. This link can be used in any mechanism.
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/merge.png'}
+  alt="merge"
+  maxWidth="30rem"
+  caption="A star shape being converted into a star-shaped link with two moving pivot points"
+  border={true}
+/>
+
+### Union
+
+1. Start by drawing two shapes.
+2. Use the Multi-Select option to select both the shapes and then use the _Union_ option to combine two shapes.
+3. The order of shapes does not matter.
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/union.png'}
+  alt="union"
+  maxWidth="30rem"
+  caption="Combining two shapes using Union operation"
+  border={true}
+/>
+
+### Difference
+
+1. Start by drawing two shapes.
+2. Use the Multi-Select option to select both the shapes and then use the _Difference_ option to subtract two shapes.
+3. The order of subtraction is determined by the shape number. Thus, the new shape is obtained by performing S_i - S_i+1.
+4. From the shape context menu, you can change the overlap to change the order of difference.
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/difference.png'}
+  alt="difference"
+  maxWidth="30rem"
+  caption="Subtracting two shapes using Difference operation: Here S2 is subtracted from S1 to get a new shape S3."
+  border={true}
+/>
+
+### Intersection
+
+1. Start by drawing two shapes.
+2. Use the Multi-Select option to select both the shapes and then use the _Intersection_ option to find a common area of the shapes.
+3. The order of shapes does not matter.
+
+<DocImage
+  src={'/img/adding-shapes-to-mechanisms/intersection.png'}
+  alt="intersection"
+  maxWidth="30rem"
+  caption="Intersecting two shapes using Intersection operation: Here a new shape S3 is formed from the common area of S1 and S2."
+  border={true}
+/>
+
+**Note**: Merge, Union, Difference, and Intersection can be performed only on a pair of shapes at a time. However, you can repeat the process on any new pair of shapes.
