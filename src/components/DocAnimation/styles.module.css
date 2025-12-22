@@ -1,0 +1,24 @@
+.container {
+  margin-bottom: 1.25rem;
+}
+
+.container video {
+  width: 100%;
+  display: block;
+}
+
+.container p {
+  margin-bottom: 0;
+}
+
+.border {
+  border: 0.2rem solid var(--border-highlight-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.caption {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
