@@ -1,0 +1,59 @@
+---
+sidebar_position: 2
+---
+
+# Multi-DOF Mechanisms
+
+You can also model multi-DOF serial or parallel or hybrid mechanisms using MotionGen.
+
+## Serial Robot Mechanism
+
+Draw two or more links end to end and attach an actuator at each of the two joints. Play with the relative speed of the actuators to see different motion curves emerge. It is like making your own digital Spirograph, but at no cost.
+
+<DocAnimation
+  src={
+    '/video/advanced-mechanism-simulation/two-dof-serial-robot-mechanism-rotary.mp4'
+  }
+  title="two dof serial robot mechanism rotary"
+  caption="A Two DOF Serial Robot Mechanism Driven by Rotary Actuators"
+  border={true}
+/>
+
+<DocImage
+  src={
+    '/img/advanced-mechanism-simulation/two-dof-serial-robot-mechanism-linear.png'
+  }
+  alt="two dof serial robot mechanism linear"
+  maxWidth="32rem"
+  caption="A Two DOF Serial Robot Mechanism Driven by Linear Actuators"
+  border={true}
+/>
+
+## Parallel Robot Mechanism
+
+Draw a five-bar closed loop mechanism and actuate at the fixed joints. You can also actuate at the moving joints. By changing the relative speed of actuators, you can generate different motion curves.
+
+<DocImage
+  src={
+    '/img/advanced-mechanism-simulation/two-dof-five-bar-parallel-robot-mechanism.png'
+  }
+  alt="two dof five-bar parallel robot mechanism"
+  maxWidth="32rem"
+  caption="A Two DOF Five-Bar Parallel Robot Mechanism"
+  border={true}
+/>
+
+In a later chapter, you will learn how to control the speed of actuators to give rise to different motions of an output link.
+
+## Hybrid Serial-Parallel Robot Mechanism
+
+Draw a five-bar hybrid mechanism as shown below. This can be used for a walking robot. You will have to choose the range of actuation to get the walking motion.
+
+<DocAnimation
+  src={
+    '/video/advanced-mechanism-simulation/two-dof-five-bar-hybrid-serial-parallel-robot-mechanism.mp4'
+  }
+  title="two dof five-bar hybrid serial parallel robot mechanism"
+  caption="A Two DOF Five-Bar Hybrid Serial-Parallel Robot Mechanism"
+  border={true}
+/>
