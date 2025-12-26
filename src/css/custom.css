@@ -30,3 +30,18 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-highlight-color: #ffed4e;
 }
+
+/* Top-level category links (section titles) */
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  font-size: 1rem;
+}
+
+/* Nested/subsection links (smaller) */
+.theme-doc-sidebar-item-category .menu__list .menu__link {
+  font-size: 0.875rem;
+}
+
+/* Further nested items (even smaller) */
+.theme-doc-sidebar-item-category .menu__list .menu__list .menu__link {
+  font-size: 0.8125rem;
+}
