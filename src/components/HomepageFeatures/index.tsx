@@ -1,15 +1,16 @@
 import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import DocAnimation from '../DocAnimation';
 
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className={clsx('container', styles.mainContainer)}>
         <div className={styles.subContainer}>
-          <img
-            className={styles.animation}
-            src={require('@site/static/img/homepage-animation.gif').default}
+          <DocAnimation
+            src={'/video/homepage-animation.mp4'}
+            title="homepage animation"
           />
           <p>
             MotionGen is a planar mechanism design and simulation software part
