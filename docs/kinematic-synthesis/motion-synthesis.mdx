@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Motion Synthesis
@@ -7,7 +7,7 @@ sidebar_position: 1
 Motion Synthesis is concerned with designing a mechanism to generate a specific motion specified as a set of key positions. Unlike path synthesis problem which specifies only a set of via points, here the orientation of the coupler is also given. MotionGen has another panel specifically for this task for designing four-bar mechanisms with any type and dimension. Open the _Motion Synthesis_ panel from the _File_ menu.
 
 <DocImage
-  src={'/img/motion-synthesis/motion-synthesis-panel.png'}
+  src={'/img/kinematic-synthesis/motion-synthesis-panel.png'}
   alt="motion synthesis panel"
   maxWidth="32rem"
   caption="The Motion Synthesis Panel"
@@ -22,7 +22,7 @@ When it comes to motion generation, Five is a magic number for planar four-bar m
 **Draw five arbitrary poses**: Two assemblies of a four-bar mechanism are shown. The red handles on the poses allow you to change the location and orientation of the poses. Generally, the mechanisms may have circuit, branch, and order defects. Thus, it may be necessary to adjust the poses to obtain a useful mechanism.
 
 <DocAnimation
-  src={'/video/motion-synthesis/five-poses.mp4'}
+  src={'/video/kinematic-synthesis/five-poses.mp4'}
   title="five poses"
   border={true}
 />
@@ -32,7 +32,7 @@ When it comes to motion generation, Five is a magic number for planar four-bar m
 **Draw four arbitrary poses and one line constraint**: The line constraint is on the location of the fixed pivots. A plurality of line constraints can be specified to enlarge the solution space. The line constraint can also be toggled to the moving pivots.
 
 <DocAnimation
-  src={'/video/motion-synthesis/four-poses-one-line-constraint.mp4'}
+  src={'/video/kinematic-synthesis/four-poses-one-line-constraint.mp4'}
   title="four poses one line constraint"
   border={true}
 />
@@ -42,7 +42,7 @@ When it comes to motion generation, Five is a magic number for planar four-bar m
 **Draw three arbitrary poses and two pivot constraints**: Here the two pivot constraints are on the location of the fixed pivots. A plurality of line constraints can be specified to enlarge the solution space. The pivot constraints can also be toggled to the moving pivots.
 
 <DocAnimation
-  src={'/video/motion-synthesis/three-poses-two-pivot-constraints.mp4'}
+  src={'/video/kinematic-synthesis/three-poses-two-pivot-constraints.mp4'}
   title="three poses two pivot constraints"
   border={true}
 />
@@ -52,7 +52,7 @@ When it comes to motion generation, Five is a magic number for planar four-bar m
 **Draw two arbitrary poses and three pivot constraints**: Two of the three pivot constraints can be fixed or moving and the third one has to be a different type.
 
 <DocAnimation
-  src={'/video/motion-synthesis/two-poses-three-pivot-constraints.mp4'}
+  src={'/video/kinematic-synthesis/two-poses-three-pivot-constraints.mp4'}
   title="two poses three pivot constraints"
   border={true}
 />

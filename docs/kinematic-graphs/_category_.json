@@ -1,0 +1,8 @@
+{
+  "label": "Kinematic Graphs",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "MotionGen also provides kinematic property data and graphs for position, velocity, and acceleration of joints and links. These properties can be examined and exported for further analysis from the Joint/Link Graph panels."
+  }
+}
