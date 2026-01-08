@@ -1,0 +1,55 @@
+---
+sidebar_position: 1
+---
+
+# Panels
+
+## Base Panel
+
+<DocImage
+  src={'/img/glossary/base-panel.png'}
+  alt="base panel"
+  maxWidth="12rem"
+  border={true}
+/>
+
+### Icons Table
+
+| Icon                                                      | Name              | Description                                                                                                                                                                                                                                                                                 |
+| --------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![select](/img/glossary/select.png)                       | Select            | Choose an object (joint/link) to modify/delete/move. You can click on an empty spot in the canvas to enter "select mode".                                                                                                                                                                   |
+| ![multi-select](/img/glossary/multi-select.png)           | Multi-Select      | Allows you to create a rectangular selection that contains all the objects you want to select to modify/delete/move. Objects to be selected do not have to be completely inside the drawn selection. A mere crossing of the rectangular selection with the object will select them as well. |
+| ![mech-select](/img/glossary/mech-select.png)             | Mech-Select       | In this mode, the geometry of the mechanism is not changed and the mechanism can be moved by clicking, dragging a joint or link.                                                                                                                                                            |
+| ![image-select](/img/glossary/image-select.png)           | Image Select      | Allows you to select an image you have opened in the canvas to resize/rotate/delete/move it. You can also change the opacity of the image.                                                                                                                                                  |
+| ![draw-link](/img/glossary/draw-link.png)                 | Draw Link         | Lets you draw a link with a revolute joint on each end by clicking and dragging to get the desired link length and position.                                                                                                                                                                |
+| ![draw-slotted-link](/img/glossary/draw-slotted-link.png) | Draw Slotted Link | Follow the process of drawing a link, but this link will have a slot inside its body.                                                                                                                                                                                                       |
+| ![add-joint](/img/glossary/add-joint.png)                 | Add Joint         | Lets you add a revolute joint to a link by clicking anywhere on the link body and dragging either on the link body or outside of it to extend the link body.                                                                                                                                |
+| ![add-slot](/img/glossary/add-slot.png)                   | Add Slot          | Lets you add a slot to a link by clicking on the link body to add a slot between two revolute joints that are closest to where you clicked.                                                                                                                                                 |
+| ![draw-cylinder](/img/glossary/draw-cylinder.png)         | Draw Cylinder     | Lets you draw a cylinder with the function of a link that can collapse and expand throughout a motion. Follow the same steps as drawing a link.                                                                                                                                             |
+| ![measure](/img/glossary/measure.png)                     | Measure           | Allows you to measure the length between two joints by clicking on the first joint and then the second joint. Clicking on the dimension shown allows you to edit them as well.                                                                                                              |
+
+## Shapes Panel
+
+<DocImage
+  src={'/img/glossary/shape-panel.png'}
+  alt="shape panel"
+  maxWidth="12rem"
+  border={true}
+/>
+
+### Icons Table
+
+| Icon                                                                | Name                   | Description                                                                                                                                                                                                            |
+| ------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![draw-arbitrary-polygon](/img/glossary/draw-arbitrary-polygon.png) | Draw Arbitrary Polygon | Draw a custom polygon by choosing the position and number of vertices for the shape.                                                                                                                                   |
+| ![draw-arbitrary-shape](/img/glossary/draw-arbitrary-shape.png)     | Draw Arbitrary Shape   | Draw a custom shape by doodling whichever shape you want.                                                                                                                                                              |
+| ![draw-circle](/img/glossary/draw-circle.png)                       | Draw Circle            | Draw a circle by clicking to locate the center point and dragging outwards for size.                                                                                                                                   |
+| ![draw-rectangle](/img/glossary/draw-rectangle.png)                 | Draw Rectangle         | Draw a rectangle by clicking and dragging a rectangular region.                                                                                                                                                        |
+| ![draw-triangle](/img/glossary/draw-triangle.png)                   | Draw Triangle          | Draw a triangle by drawing a rectangle but only a triangle shaded region is made.                                                                                                                                      |
+| ![draw-star](/img/glossary/draw-star.png)                           | Draw Star              | Draw a star by clicking and dragging outwards for size.                                                                                                                                                                |
+| ![merge](/img/glossary/merge.png)                                   | Merge                  | Merges the selected shape with a link drawn inside the shape to create a link. Use the Multi-Select option to select a shape and link to merge them. This option creates a bonafide link with arbitrary shape.         |
+| ![union](/img/glossary/union.png)                                   | Union                  | Unites the selected shapes to create a new resulting shape.                                                                                                                                                            |
+| ![difference](/img/glossary/difference.png)                         | Difference             | Subtracts one shape from another. The order of subtraction is determined by the shape number. Thus, the new shape is obtained by performing S_i - S_i+1. You can change the overlap to change the order of the shapes. |
+| ![intersection](/img/glossary/intersection.png)                     | Intersection           | Crates a new shape, which is common to two shapes.                                                                                                                                                                     |
+
+**Note**: Merge, Union, Difference, and Intersection can be performed only on a pair of shapes at a time. However, you can repeat the process.

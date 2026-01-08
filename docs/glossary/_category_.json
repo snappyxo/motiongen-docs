@@ -1,0 +1,8 @@
+{
+  "label": "Glossary",
+  "position": 12,
+  "link": {
+    "type": "generated-index",
+    "description": "While the many panels and their uses have been explained in the manual, in this chapter you will find a comprehensive glossary of what each icon does in the MotionGen app."
+  }
+}
