@@ -13,8 +13,6 @@ sidebar_position: 1
   border={true}
 />
 
-### Icons Table
-
 | Icon                                                      | Name              | Description                                                                                                                                                                                                                                                                                 |
 | --------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![select](/img/glossary/select.png)                       | Select            | Choose an object (joint/link) to modify/delete/move. You can click on an empty spot in the canvas to enter "select mode".                                                                                                                                                                   |
@@ -37,8 +35,6 @@ sidebar_position: 1
   border={true}
 />
 
-### Icons Table
-
 | Icon                                                                | Name                   | Description                                                                                                                                                                                                            |
 | ------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![draw-arbitrary-polygon](/img/glossary/draw-arbitrary-polygon.png) | Draw Arbitrary Polygon | Draw a custom polygon by choosing the position and number of vertices for the shape.                                                                                                                                   |
@@ -53,3 +49,145 @@ sidebar_position: 1
 | ![intersection](/img/glossary/intersection.png)                     | Intersection           | Crates a new shape, which is common to two shapes.                                                                                                                                                                     |
 
 **Note**: Merge, Union, Difference, and Intersection can be performed only on a pair of shapes at a time. However, you can repeat the process.
+
+## Geomerty Panel
+
+<DocImage
+  src={'/img/glossary/geometry-panel.png'}
+  alt="geometry panel"
+  maxWidth="14rem"
+  border={true}
+/>
+
+## Transform Panel
+
+<DocImage
+  src={'/img/glossary/transform-panel.png'}
+  alt="transform panel"
+  maxWidth="14rem"
+  border={true}
+/>
+
+| Icon                                                              | Name                  | Description                                                                                                           |
+| ----------------------------------------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| ![rotate-90-degrees-ccw](/img/glossary/rotate-90-degrees-ccw.png) | Rotate 90 Degrees CCW | Rotates the selected object(s) by 90 degrees in the counterclockwise direction about its designated geometric center. |
+| ![rotate-90-degrees-cw](/img/glossary/rotate-90-degrees-cw.png)   | Rotate 90 Degrees CW  | Rotates the selected object(s) by 90 degrees in the clockwise direction about its designated geometric center.        |
+| ![vertical-mirror](/img/glossary/vertical-mirror.png)             | Vertical Mirror       | Mirrors the selected object(s) across a horizontal line passing through its geometric center.                         |
+| ![horizontal-mirror](/img/glossary/horizontal-mirror.png)         | Horizontal Mirror     | Mirrors the selected object(s) across a vertical line passing through its geometric center.                           |
+
+**Transforming With Values**: The rest of the transform panel is unlocked by pressing the extras button. It lets you perform the same actions as the icons but with specific values or coordinates.
+
+- Fx and Fy locate the local reference frame about which the transformations discussed next are performed.
+- Tx and Ty are the specific values for translation in each direction about the local reference frame.
+- Sx and Sy are the specific values for the scaling about the local reference frame.
+- R is the specific amount of degrees you wish to rotate counterclockwise from the positive x-axis about the local reference frame.
+
+## Path Synthesis Panel
+
+<DocImage
+  src={'/img/glossary/path-synthesis-panel.png'}
+  alt="path synthesis panel"
+  maxWidth="14rem"
+  border={true}
+/>
+
+| Icon                                              | Name          | Description                                                                                                                 |
+| ------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| ![draw-path](/img/glossary/draw-path.png)         | Draw Path     | Lets you draw a path for the motion by clicking and dragging your cursor. The line will be blue.                            |
+| ![draw-obstacle](/img/glossary/draw-obstacle.png) | Draw Obstacle | Lets you draw an obstacle for the mechanism by clicking and dragging your cursor. The line will be gray.                    |
+| ![emphasize](/img/glossary/emphasize.png)         | Emphasize     | Emphasizes the part of the motion MotionGen should focus on generating a mechanism for by clicking and dragging the cursor. |
+| ![de-emphasize](/img/glossary/de-emphasize.png)   | De-emphasize  | De-emphasizes the part of the motion you have emphasized by clicking and dragging the cursor.                               |
+
+## Motion Synthesis Panel
+
+<DocImage
+  src={'/img/glossary/motion-synthesis-panel.png'}
+  alt="motion synthesis panel"
+  maxWidth="14rem"
+  border={true}
+/>
+
+| Icon                                                                                | Name                           | Description                                                                                                                            |
+| ----------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| ![draw-pose](/img/glossary/draw-pose.png)                                           | Draw Pose                      | Lets you draw a pose for the mechanism coupler to pass through by clicking and dragging to rotate the pose to the desired orientation. |
+| ![draw-point-constraint](/img/glossary/draw-point-constraint.png)                   | Draw Point Constraint          | Lets you draw a point constraint by simply clicking on the position where you want the joint to be.                                    |
+| ![draw-line-constraint](/img/glossary/draw-line-constraint.png)                     | Draw Line Constraint           | Lets you draw a line constraint by clicking and dragging to determine the orientation of the line constraint.                          |
+| ![toggle-fixed-moving-constraint](/img/glossary/toggle-fixed-moving-constraint.png) | Toggle Fixed/Moving Constraint | Lets you toggle a fixed/moving point/line constraint to be of the other type.                                                          |
+| ![3-arbitrary-poses](/img/glossary/3-arbitrary-poses.png)                           | 3 Arbitrary Poses              | Generates 3 arbitrary poses with 2 fixed point constraints                                                                             |
+| ![4-arbitrary-poses](/img/glossary/4-arbitrary-poses.png)                           | 4 Arbitrary Poses              | Generates 4 arbitrary poses with 1 fixed line constraints                                                                              |
+| ![5-arbitrary-poses](/img/glossary/5-arbitrary-poses.png)                           | 5 Arbitrary Poses              | Generates 5 arbitrary poses.                                                                                                           |
+
+## Rotary Actuator Panel
+
+<DocImage
+  src={'/img/glossary/rotary-actuator-panel-constant.png'}
+  alt="rotary actuator panel constant"
+  maxWidth="24rem"
+  border={true}
+/>
+
+<DocImage
+  src={'/img/glossary/rotary-actuator-panel-variable.png'}
+  alt="rotary actuator panel variable"
+  maxWidth="24rem"
+  border={true}
+/>
+
+## Linear Actuator Panel
+
+<DocImage
+  src={'/img/glossary/linear-actuator-panel-constant.png'}
+  alt="linear actuator panel constant"
+  maxWidth="24rem"
+  border={true}
+/>
+
+<DocImage
+  src={'/img/glossary/linear-actuator-panel-variable.png'}
+  alt="linear actuator panel variable"
+  maxWidth="24rem"
+  border={true}
+/>
+
+## Joint Graph Panel
+
+<DocImage
+  src={'/img/glossary/joint-graph-panel.png'}
+  alt="joint graph panel"
+  border={true}
+/>
+
+The Joint Graph panel provides **Displacement**, **Linear Velocity**, and **Linear Acceleration** graphs of the selected joint. It displays data in **linear units** since it is representing a point. The mechanism will also be shown in the panel with the selected joint highlighted. The hidden extras show a table of all the data which can be downloaded as either a pdf or an excel file.
+
+Note: The **Displacement** is the distance between the selected joint and the frame shown on the mechanism snapshot.
+
+## Link Graph Panel
+
+<DocImage
+  src={'/img/glossary/link-graph-panel.png'}
+  alt="link graph panel"
+  border={true}
+/>
+
+The Link Graph panel provides **Theta**, **Angular Velocity**, and **Angular Acceleration** graphs of the selected link. It displays data in **angular units** since it is representing a body. The mechanism will also be shown in the panel with the selected link highlighted. The hidden extras show a table of all the data which can be downloaded as either a pdf or an excel file.
+
+## Recorder Panel
+
+<DocImage
+  src={'/img/glossary/recorder-panel-1.png'}
+  alt="recorder panel 1"
+  maxWidth="14rem"
+  border={true}
+/>
+
+<DocImage
+  src={'/img/glossary/recorder-panel-2.png'}
+  alt="recorder panel 2"
+  maxWidth="14rem"
+  border={true}
+/>
+
+| Icon                                                  | Name            | Description                                                                                                       |
+| ----------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------- |
+| ![start-recording](/img/glossary/start-recording.png) | Start Recording | Lets you record current tab.                                                                                      |
+| ![stop-recording](/img/glossary/stop-recording.png)   | Stop Recording  | Lets you stop the recording and immediately have the software start a download of the recording onto your device. |
