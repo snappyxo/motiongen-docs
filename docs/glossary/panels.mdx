@@ -18,7 +18,7 @@ sidebar_position: 1
 | ![select](/img/glossary/select.png)                       | Select            | Choose an object (joint/link) to modify/delete/move. You can click on an empty spot in the canvas to enter "select mode".                                                                                                                                                                   |
 | ![multi-select](/img/glossary/multi-select.png)           | Multi-Select      | Allows you to create a rectangular selection that contains all the objects you want to select to modify/delete/move. Objects to be selected do not have to be completely inside the drawn selection. A mere crossing of the rectangular selection with the object will select them as well. |
 | ![mech-select](/img/glossary/mech-select.png)             | Mech-Select       | In this mode, the geometry of the mechanism is not changed and the mechanism can be moved by clicking, dragging a joint or link.                                                                                                                                                            |
-| ![image-select](/img/glossary/image-select.png)           | Image Select      | Allows you to select an image you have opened in the canvas to resize/rotate/delete/move it. You can also change the opacity of the image.                                                                                                                                                  |
+| ![image-select](/img/glossary/image-select.png)           | Image-Select      | Allows you to select an image you have opened in the canvas to resize/rotate/delete/move it. You can also change the opacity of the image.                                                                                                                                                  |
 | ![draw-link](/img/glossary/draw-link.png)                 | Draw Link         | Lets you draw a link with a revolute joint on each end by clicking and dragging to get the desired link length and position.                                                                                                                                                                |
 | ![draw-slotted-link](/img/glossary/draw-slotted-link.png) | Draw Slotted Link | Follow the process of drawing a link, but this link will have a slot inside its body.                                                                                                                                                                                                       |
 | ![add-joint](/img/glossary/add-joint.png)                 | Add Joint         | Lets you add a revolute joint to a link by clicking anywhere on the link body and dragging either on the link body or outside of it to extend the link body.                                                                                                                                |
@@ -59,6 +59,30 @@ sidebar_position: 1
   border={true}
 />
 
+| Icon                                                                        | Name                   | Description                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![geo-select](/img/glossary/geo-select.png)                                 | Geo-Select             | The Select mode specify designed for interacting with geometry objects.                                                                                                                                                                                                                                                                                                                        |
+| ![geo-multi-select](/img/glossary/geo-multi-select.png)                     | Geo-Multi-Select       | The Multi-Select mode specify designed for interacting with geometry objects.                                                                                                                                                                                                                                                                                                                  |
+| ![geo-point](/img/glossary/geo-point.png)                                   | Point                  | Creates a geometry point by clicking on the canvas.                                                                                                                                                                                                                                                                                                                                            |
+| ![geo-midpoint](/img/glossary/geo-midpoint.png)                             | Midpoint               | Creates a geometry midpoint by selecting two distinct geometry points.                                                                                                                                                                                                                                                                                                                         |
+| ![geo-segment](/img/glossary/geo-segment.png)                               | Segment                | Creates a geometry segment by selecting two distinct geometry points. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                                                                                                  |
+| ![geo-line](/img/glossary/geo-line.png)                                     | Line                   | Creates a geometry line by selecting two distinct geometry points. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                                                                                                     |
+| ![geo-perpendicular-line](/img/glossary/geo-perpendicular-line.png)         | Perpendicular Line     | Creates a geometry perpendicular line by first selecting a geometry line object (line, segment, or bisector), then selecting a geometry point. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                         |
+| ![geo-parallel-line](/img/glossary/geo-parallel-line.png)                   | Parallel Line          | Creates a geometry parallel line by first selecting a geometry line object (line, segment, or bisector), then selecting a geometry point. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                              |
+| ![geo-perpendicular-bisector](/img/glossary/geo-perpendicular-bisector.png) | Perpendicular Bisector | Creates a geometry perpendicular bisector by selecting a geometry segment object.                                                                                                                                                                                                                                                                                                              |
+| ![geo-angle-bisector](/img/glossary/geo-angle-bisector.png)                 | Angle Bisector         | Creates a geometry angle bisector by selecting three distinct geometry points.                                                                                                                                                                                                                                                                                                                 |
+| ![geo-circle](/img/glossary/geo-circle.png)                                 | Circle                 | Creates a geometry circle by selecting two distinct geometry points. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                                                                                                   |
+| ![geo-semi-circle](/img/glossary/geo-semi-circle.png)                       | Semi-Circle            | Creates a geometry semi-circle by selecting two distinct geometry points. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                                                                                              |
+| ![geo-compass](/img/glossary/geo-compass.png)                               | Compass                | Creates a geometry compass by selecting three distinct geometry points, where the first two points define the compass radius and the third point is the compass center, or by selecting a geometry segment and a geometry point, where the segment defines the radius. If you click in an area where no point exists, a geometry point is created at that location and automatically selected. |
+| ![geo-arc](/img/glossary/geo-arc.png)                                       | Arc                    | Creates a geometry arc by selecting three distinct geometry points. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                                                                                                    |
+| ![geo-polygon](/img/glossary/geo-polygon.png)                               | Polygon                | Creates a geometry polygon by selecting any number of distinct geometry points. Selects the first point again to close the polygon. If you click in an area where no point exists, a geometry point is created at that location and automatically selected.                                                                                                                                    |
+| ![geo-spline](/img/glossary/geo-spline.png)                                 | Spline                 | Creates a geometry spline by clicking and holding on the canvas, dragging to define the spline, and releasing the mouse button.                                                                                                                                                                                                                                                                |
+| ![geo-distance](/img/glossary/geo-distance.png)                             | Distance               | Creates a geometry distance by selecting two distinct geometry points.                                                                                                                                                                                                                                                                                                                         |
+| ![geo-angle](/img/glossary/geo-angle.png)                                   | Angle                  | Creates a geometry angle by selecting three distinct geometry points.                                                                                                                                                                                                                                                                                                                          |
+| ![geo-sync-segment](/img/glossary/geo-sync-segment.png)                     | Sync Segments (beta)   | Creates a sync linking by selecting two distinct geometry segment. It syncs only there length.                                                                                                                                                                                                                                                                                                 |
+| ![geo-color](/img/glossary/geo-color.png)                                   | Color                  | Allows you to choose the color used when creating geometry objects.                                                                                                                                                                                                                                                                                                                            |
+| ![geo-stroke-style](/img/glossary/geo-stroke-style.png)                     | Stroke Style           | Allows you to choose the stroke style used when creating geometry objects.                                                                                                                                                                                                                                                                                                                     |
+
 ## Transform Panel
 
 <DocImage
@@ -98,6 +122,8 @@ sidebar_position: 1
 | ![emphasize](/img/glossary/emphasize.png)         | Emphasize     | Emphasizes the part of the motion MotionGen should focus on generating a mechanism for by clicking and dragging the cursor. |
 | ![de-emphasize](/img/glossary/de-emphasize.png)   | De-emphasize  | De-emphasizes the part of the motion you have emphasized by clicking and dragging the cursor.                               |
 
+The checkboxes **Four-bar**, **Six-bar** and **Eight-bar** on the panel allow you to select the types of mechanism outputs for a synthesis run.
+
 ## Motion Synthesis Panel
 
 <DocImage
@@ -117,7 +143,11 @@ sidebar_position: 1
 | ![4-arbitrary-poses](/img/glossary/4-arbitrary-poses.png)                           | 4 Arbitrary Poses              | Generates 4 arbitrary poses with 1 fixed line constraints                                                                              |
 | ![5-arbitrary-poses](/img/glossary/5-arbitrary-poses.png)                           | 5 Arbitrary Poses              | Generates 5 arbitrary poses.                                                                                                           |
 
+The Motion synthesis returns four-bar mechnaims only. Each four-bar mechanism has two circuit - **open** and **crossed**. Use the **Circuit** ratio button to choose which circuit to display. In some cases, the solutions can be converted to RP or PR joints using a slotted link. Use the **RR Only** switch to control this behavior.
+
 ## Rotary Actuator Panel
+
+### Constant Velocity
 
 <DocImage
   src={'/img/glossary/rotary-actuator-panel-constant.png'}
@@ -126,6 +156,12 @@ sidebar_position: 1
   border={true}
 />
 
+| Icon                                  | Name    | Description                                                                                    |
+| ------------------------------------- | ------- | ---------------------------------------------------------------------------------------------- |
+| ![reverse](/img/glossary/reverse.png) | Reverse | Lets you reverse the direction of a constant velocity actuator. For exampe, 10 rpm to -10 rpm. |
+
+### Variable Velocity
+
 <DocImage
   src={'/img/glossary/rotary-actuator-panel-variable.png'}
   alt="rotary actuator panel variable"
@@ -133,7 +169,17 @@ sidebar_position: 1
   border={true}
 />
 
+**Max time**: Defines the maximum time for the simulation. It changes the x-axis on the graph. Use **Set** button to confirm the input.
+
+**Time**: Enters the time slot to modfiy.
+
+**Velocity**: Enters the corresponding velocity between the time slot entered.
+
+After inputs above values, use **Instant** or **Linear** button to apply the change to the actuator velocity profile.
+
 ## Linear Actuator Panel
+
+### Constant Velocity
 
 <DocImage
   src={'/img/glossary/linear-actuator-panel-constant.png'}
@@ -142,12 +188,26 @@ sidebar_position: 1
   border={true}
 />
 
+| Icon                                  | Name    | Description                                                                                    |
+| ------------------------------------- | ------- | ---------------------------------------------------------------------------------------------- |
+| ![reverse](/img/glossary/reverse.png) | Reverse | Lets you reverse the direction of a constant velocity actuator. For exampe, 1 in/s to -1 in/s. |
+
+### Variable Velocity
+
 <DocImage
   src={'/img/glossary/linear-actuator-panel-variable.png'}
   alt="linear actuator panel variable"
   maxWidth="24rem"
   border={true}
 />
+
+**Max time**: Defines the maximum time for the simulation. It changes the x-axis on the graph. Use **Set** button to confirm the input.
+
+**Time**: Enters the time slot to modfiy.
+
+**Velocity**: Enters the corresponding velocity between the time slot entered.
+
+After inputs above values, use **Instant** or **Linear** button to apply the change to the actuator velocity profile.
 
 ## Joint Graph Panel
 
