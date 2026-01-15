@@ -1,0 +1,147 @@
+---
+sidebar_position: 2
+---
+
+# Using the Geometry Panel
+
+The Geometry panel provides tools for creating geometric objects such as points, lines, segments, and circles. These objects can be used to perform classical geometric constructions for mechanism design.
+
+## Points, Segments, and Lines
+
+The following example demonstrates how to create geometry objects and how they interact with each other:
+
+1. Create a **Point** on the canvas
+2. Create a **Midpoint** between two points
+3. Draw a **Segment** connecting two points
+4. Draw a **Line** through two points
+5. Observe how moving a point updates the **Intersection Point** of two lines
+6. Notice how lines that depend on the intersection point also move accordingly
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-point-lines.mp4'
+  }
+  title="geometry points and lines"
+  border={true}
+/>
+
+## Perpendicular Lines, Parallel Lines, and Bisectors
+
+The Geometry panel also provides tools for creating lines with specific geometric relationships:
+
+1. Create a **Segment** on the canvas
+2. Use the segment to create a **Perpendicular Line**
+3. Use the segment to create a **Parallel Line**
+4. Use the perpendicular line to create another **Parallel Line**
+5. Use the segment to create a **Perpendicular Bisector**
+6. Select any three points to create an **Angle Bisector**
+7. Move one of the points and observe how all dependent objects update accordingly
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-lines-bisectors.mp4'
+  }
+  title="geometry lines and bisectors"
+  border={true}
+/>
+
+## Circles, Semi-Circles, and Arcs
+
+The Geometry panel includes tools for creating circular objects:
+
+- **Circle** - Create a circle by specifying a center point and radius
+- **Semi-Circle** - Create a half circle
+- **Arc** - Create a portion of a circle
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-circles-arcs.mp4'
+  }
+  title="geometry circles and arcs"
+  border={true}
+/>
+
+## Compass
+
+The **Compass** tool is essential for classical geometric constructions. You can create a compass in two ways:
+
+- Select **two points** to define the radius (recommended)
+- Select a **segment** to use its length as the radius
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-compass.mp4'
+  }
+  title="geometry compass"
+  border={true}
+/>
+
+The compass is useful for many geometric constructions, including:
+
+- **Copying angles** - Transfer an angle from one location to another
+- **Transferring lengths** - Copy a distance to a new location
+- **Position synthesis** - Essential for two-position and three-position linkage synthesis
+
+## Polygons and Splines
+
+The Geometry panel also provides tools for creating more complex shapes:
+
+- **Polygon** - Create a closed shape with multiple vertices
+- **Spline** - Create a smooth curve through multiple points
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-polygon-spline.mp4'
+  }
+  title="geometry polygon and spline"
+  border={true}
+/>
+
+## Distance and Angle
+
+The Geometry panel provides measurement tools to get precise values:
+
+- **Distance** - Select two points to measure the distance between them
+- **Angle** - Select three points to measure the angle formed
+
+You can also modify the distance or angle value to set a specific measurement.
+
+:::note
+Changing values is only available when the selected measurement contains **free points** — points that do not depend on other geometry objects or intersections between geometry.
+:::
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-distance-angle.mp4'
+  }
+  title="geometry distance and angle"
+  border={true}
+/>
+
+## Sync Segment
+
+**Sync Segment** synchronizes the length between two segments. When a point moves and causes one segment's length to change, the other segment will update its points to maintain the same length. This is a bi-directional relationship — changing either segment will update the other.
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-sync-segment.mp4'
+  }
+  title="geometry sync segment"
+  border={true}
+/>
+
+:::caution
+Sync Segment is a special method and is **not recommended** unless other methods cannot solve the problem. For position synthesis, the **Compass** tool is the recommended way to sync lengths between segments, as it provides single-direction synchronization which is typically sufficient. Sync Segment feature may be removed in a future version.
+:::
+
+## Color and Stroke Style
+
+You can change the global color and stroke style for geometry objects. These settings affect all newly created geometry objects.
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/geometry-color-stroke-style.mp4'
+  }
+  title="geometry color and stroke style"
+  border={true}
+/>
