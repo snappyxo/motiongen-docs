@@ -4,6 +4,63 @@ sidebar_position: 3
 
 # Two-Position Synthesis
 
+Two-position synthesis is used to design a four-bar linkage that moves a body between two specified positions. There are two common cases: **Crank Output** and **Coupler Output**.
+
+## Crank Output
+
+In crank output synthesis, you design a four-bar linkage where the output link (rocker) rotates between two angular positions.
+
+1. Use a [reference image](https://www.mechref.org/md/Graphical_Linkage_Synthesis/) to define the start and end positions
+2. Place points **P1** and **P2** at the start and end positions
+3. Draw a **Segment** connecting P1 and P2
+4. Construct the **Perpendicular Bisector** of the segment
+5. Place a point **P3** at the intersection
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/two-position-synthesis-crank-1.mp4'
+  }
+  title="two position synthesis crank step 1"
+  border={true}
+/>
+
+6. Choose a point **P4** on the perpendicular bisector as the crank fixed pivot
+7. Draw a **Line** through P1 and P2
+8. Choose a point **P5** on this line as the rocker fixed pivot
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/two-position-synthesis-crank-2.mp4'
+  }
+  title="two position synthesis crank step 2"
+  border={true}
+/>
+
+9. Use **Compass** with P1 and P3 as radius, and P5 as center
+10. Place a point **P6** at the intersection of the compass circle and the line P1-P2 (the rocker moving pivot)
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/two-position-synthesis-crank-3.mp4'
+  }
+  title="two position synthesis crank step 3"
+  border={true}
+/>
+
+11. Sketch the linkage on top of the geometry construction
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/two-position-synthesis-crank-4.mp4'
+  }
+  title="two position synthesis crank step 4"
+  border={true}
+/>
+
+## Coupler Output
+
+In coupler output synthesis, you design a four-bar linkage where the coupler moves between two positions.
+
 :::info Coming Soon
 This section is under development.
 :::
