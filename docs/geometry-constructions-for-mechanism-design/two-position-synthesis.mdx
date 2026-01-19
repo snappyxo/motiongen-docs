@@ -61,6 +61,44 @@ In crank output synthesis, you design a four-bar linkage where the output link (
 
 In coupler output synthesis, you design a four-bar linkage where the coupler moves between two positions.
 
-:::info Coming Soon
-This section is under development.
-:::
+1. Use a [reference image](https://www.mechref.org/md/Graphical_Linkage_Synthesis/) to define the two coupler positions
+2. Draw a **Segment** with points **P1** and **P2** as the first coupler position
+3. Use **Compass** with P1 and P2 as radius
+4. Place the compass center at the first point of the second coupler position (**P3**)
+5. Draw a **Segment** from P3 to **P4**, where P4 is on the compass circle
+6. Rotate segment P3-P4 to align with the second coupler position
+7. (Optional) Hide the compass circle
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/two-position-synthesis-coupler-1.mp4'}
+  title="two position synthesis coupler step 1"
+  border={true}
+/>
+
+8. Draw a **Segment** between P1 and P3
+9. Construct the **Perpendicular Bisector** of the segment
+10. Choose a point **P5** on the bisector as the first fixed pivot
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/two-position-synthesis-coupler-2.mp4'}
+  title="two position synthesis coupler step 2"
+  border={true}
+/>
+
+11. Draw a **Segment** between P2 and P4
+12. Construct the **Perpendicular Bisector** of the segment
+13. Choose a point **P6** on the bisector as the second fixed pivot
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/two-position-synthesis-coupler-3.mp4'}
+  title="two position synthesis coupler step 3"
+  border={true}
+/>
+
+14. Sketch the linkage on top of the geometry construction
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/two-position-synthesis-coupler-4.mp4'}
+  title="two position synthesis coupler step 4"
+  border={true}
+/>
