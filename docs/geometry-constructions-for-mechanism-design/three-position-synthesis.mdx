@@ -4,6 +4,77 @@ sidebar_position: 4
 
 # Three-Position Synthesis
 
+Three-position synthesis is used to design a four-bar linkage that moves a coupler through three specified positions. There are two common cases: **Finding Fixed Pivots** and **With Fixed Pivots**.
+
+## Finding Fixed Pivots
+
+In this case, you determine the fixed pivot locations based on the three coupler positions.
+
+1. Use a [reference image](https://www.youtube.com/watch?v=g6TFqsvxqC4) to define the three coupler positions
+2. Draw a **Segment** with points **P1** and **P2** as the first coupler position
+3. Use **Compass** with P1 and P2 as radius
+4. Place the compass center at the first point of the second position (**P3**)
+5. Draw a **Segment** from P3 to **P4**, where P4 is on the compass circle and aligned with the second position
+6. (Optional) Hide the compass circle
+7. Use **Compass** again with P1 and P2 as radius
+8. Place the compass center at the first point of the third position (**P5**)
+9. Draw a **Segment** from P5 to **P6**, where P6 is on the compass circle and aligned with the third position
+10. (Optional) Hide the compass circle
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-find-fixed-1.mp4'
+  }
+  title="three position synthesis find fixed step 1"
+  border={true}
+/>
+
+11. Draw a **Segment** between P1 and P3
+12. Draw a **Segment** between P3 and P5
+13. Construct the **Perpendicular Bisector** of segment P1-P3
+14. Construct the **Perpendicular Bisector** of segment P3-P5
+15. Place a point **P7** at the intersection of the two bisectors as the first fixed pivot
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-find-fixed-2.mp4'
+  }
+  title="three position synthesis find fixed step 2"
+  border={true}
+/>
+
+16. Repeat steps 11-15 for P2, P4, and P6 to find the second fixed pivot (**P8**)
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-find-fixed-3.mp4'
+  }
+  title="three position synthesis find fixed step 3"
+  border={true}
+/>
+
+17. Sketch the linkage on top of the geometry construction
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-find-fixed-4.mp4'
+  }
+  title="three position synthesis find fixed step 4"
+  border={true}
+/>
+
+:::info Discussion
+The above example yields a **double-rocker** linkage with **limited angular motion** bounded by **toggle positions**. The mechanism cannot fully reach the third position due to its **kinematic limits** — a key distinction between synthesis intent and feasible motion in **non-Grashof mechanisms**.
+
+**Actuation choice** also matters: driving the other rocker causes the coupler to follow a different **motion branch**, failing to reach positions 2 and 3 due to **kinematic singularities**. This **input-output asymmetry** means driving different rockers is not equivalent.
+
+For limited-motion mechanisms, **reachability** and **actuation** must be evaluated after synthesis, especially near **toggle configurations**.
+:::
+
+## With Fixed Pivots
+
+In this case, you are given the fixed pivot locations and need to find the moving pivots on the coupler.
+
 :::info Coming Soon
 This section is under development.
 :::
