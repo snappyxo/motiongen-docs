@@ -11,7 +11,7 @@ Three-position synthesis is used to design a four-bar linkage that moves a coupl
 In this case, you determine the fixed pivot locations based on the three coupler positions.
 
 1. Use a [reference image](https://www.youtube.com/watch?v=g6TFqsvxqC4) to define the three coupler positions
-2. Draw a **Segment** with points **P1** and **P2** as the first coupler position
+2. Draw a **Segment** with points **P1** and **P2** on top of the first coupler position
 3. Use **Compass** with P1 and P2 as radius
 4. Place the compass center at the first point of the second position (**P3**)
 5. Draw a **Segment** from P3 to **P4**, where P4 is on the compass circle and aligned with the second position
@@ -75,6 +75,101 @@ For limited-motion mechanisms, **reachability** and **actuation** must be evalua
 
 In this case, you are given the fixed pivot locations and need to find the moving pivots on the coupler.
 
-:::info Coming Soon
-This section is under development.
+1. Use a [reference image](https://www.youtube.com/watch?v=g6TFqsvxqC4) to define the three coupler positions
+2. Draw a **Segment** with points **P1** and **P2** on top of the first coupler position
+3. Use **Compass** with P1 and P2 as radius
+4. Place the compass center at the first point of the second position (**P3**)
+5. Draw a **Segment** from P3 to **P4**, where P4 is on the compass circle and aligned with the second position
+6. (Optional) Hide the compass circle
+7. Use **Compass** again with P1 and P2 as radius
+8. Place the compass center at the first point of the third position (**P5**)
+9. Draw a **Segment** from P5 to **P6**, where P6 is on the compass circle and aligned with the third position
+10. (Optional) Hide the compass circle
+11. Draw a **Segment** with points **P7** and **P8** on top of the given fixed pivots
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-with-fixed-pivots-1.mp4'
+  }
+  title="three position synthesis with fixed pivots step 1"
+  border={true}
+/>
+
+12. Use **Compass** with P3 and P7 as radius, P1 as center
+13. Use **Compass** with P4 and P7 as radius, P2 as center
+14. Place a point **P9** at the intersection of the two compass circles
+15. Use **Compass** with P3 and P8 as radius, P1 as center
+16. Use **Compass** with P4 and P8 as radius, P2 as center
+17. Place a point **P10** at the intersection of the two compass circles
+18. (Recommended) Hide the compass circles
+19. Draw a **Segment** between P9 and P10
+
+:::tip
+The pattern of creating two compass circles and finding their intersection is used to **copy a triangle** when one side has the same length. For example, triangle P3-P4-P7 is copied to P1-P2-P9.
 :::
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-with-fixed-pivots-2.mp4'
+  }
+  title="three position synthesis with fixed pivots step 2"
+  border={true}
+/>
+
+20. Use **Compass** with P5 and P7 as radius, P1 as center
+21. Use **Compass** with P6 and P7 as radius, P2 as center
+22. Place a point **P11** at the intersection of the two compass circles
+23. Use **Compass** with P5 and P8 as radius, P1 as center
+24. Use **Compass** with P6 and P8 as radius, P2 as center
+25. Place a point **P12** at the intersection of the two compass circles
+26. (Recommended) Hide the compass circles
+27. Draw a **Segment** between P11 and P12
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-with-fixed-pivots-3.mp4'
+  }
+  title="three position synthesis with fixed pivots step 3"
+  border={true}
+/>
+
+28. Draw a **Segment** between P7 and P9
+29. Draw a **Segment** between P9 and P11
+30. Construct the **Perpendicular Bisector** of each segment
+31. Place a point **P13** at the intersection of the two bisectors as the first moving pivot
+32. Repeat steps 28-31 for P8, P10, and P12 to find the second moving pivot (**P14**)
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-with-fixed-pivots-4.mp4'
+  }
+  title="three position synthesis with fixed pivots step 4"
+  border={true}
+/>
+
+33. Temporarily treat **P13** and **P14** as fixed pivots and **P7** and **P8** as moving pivots
+34. Sketch a four-bar linkage
+35. Add an actuator to the joint at P14
+36. Verify the four-bar passes through segments P7-P8, P9-P10, and P11-P12
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-with-fixed-pivots-5.mp4'
+  }
+  title="three position synthesis with fixed pivots step 5"
+  border={true}
+/>
+
+37. Remove the actuator
+38. Invert the four-bar linkage by making the link P7-P8 the new ground
+39. This inverts P13-P14 back to moving pivots and P7-P8 to fixed pivots
+40. Extend the coupler (now the link P13-P14) to include the original segment points P1 and P2
+41. Add an actuator at the joint of point P8
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/three-position-synthesis-with-fixed-pivots-6.mp4'
+  }
+  title="three position synthesis with fixed pivots step 6"
+  border={true}
+/>
