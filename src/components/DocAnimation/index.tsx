@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './styles.module.css';
 
 interface DocAnimationProps {
@@ -8,6 +8,7 @@ interface DocAnimationProps {
   maxWidth?: string;
   border?: boolean;
   align?: 'left' | 'center' | 'right';
+  showRestart?: boolean;
 }
 
 export default function DocAnimation({
@@ -17,7 +18,9 @@ export default function DocAnimation({
   maxWidth,
   border = false,
   align = 'center',
+  showRestart = true,
 }: DocAnimationProps): React.JSX.Element {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const containerStyle: React.CSSProperties = {};
 
   // Handle maxWidth and alignment
@@ -38,19 +41,39 @@ export default function DocAnimation({
   // Apply border class to video if needed
   const videoClassName = border ? styles.border : '';
 
+  const handleRestart = () => {
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play();
+    }
+  };
+
   return (
     <div className={styles.container} style={containerStyle}>
-      <video
-        className={videoClassName}
-        autoPlay
-        loop
-        muted
-        playsInline
-        title={title}
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className={styles.videoWrapper}>
+        <video
+          ref={videoRef}
+          className={videoClassName}
+          autoPlay
+          loop
+          muted
+          playsInline
+          title={title}
+        >
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {showRestart && (
+          <button
+            className={styles.restartButton}
+            onClick={handleRestart}
+            title="Restart video"
+            aria-label="Restart video"
+          >
+            ↺
+          </button>
+        )}
+      </div>
       {caption && <p className={styles.caption}>{caption}</p>}
     </div>
   );
