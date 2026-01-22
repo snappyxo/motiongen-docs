@@ -1,0 +1,121 @@
+---
+sidebar_position: 3
+---
+
+# Essential Constructions
+
+Before diving into linkage synthesis, it's helpful to understand some fundamental geometric constructions using compass and straightedge.
+
+For a comprehensive overview of these constructions, see [Geometry Constructions (15 Must Know Types) with Compass and Straightedge](https://www.youtube.com/watch?v=IrRTGbqr8MQ).
+
+## Copy an Angle
+
+To copy an angle from one location to another:
+
+1. Draw a **Compass** arc (circle) from the vertex of the original angle, intersecting both sides
+2. Draw the same arc (circle) from the new vertex
+3. Use **Compass** to measure the distance between the two intersection points on the original angle
+4. Transfer this distance to the new arc to locate the second side of the copied angle
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/copy-an-angle.mp4'}
+  title="copy an angle"
+  border={true}
+/>
+
+## Construct a Perpendicular Bisector
+
+To find all points equidistant from two given points:
+
+1. Draw a **Segment** between the two points (A and B)
+2. From point A, draw a **Cirlce** or a **Compass** arc (circle) with radius greater than half the segment length
+3. From point B, draw a **Compass** arc (circle) with the same radius
+4. The arcs intersect at two points
+5. Draw a **Line** through these two intersection points
+6. This line is the perpendicular bisector — any point on it is equidistant from A and B
+
+:::tip
+In MotionGen, you can use the **Perpendicular Bisector** tool directly by selecting a segment.
+:::
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/construct-a-perpendicular-bisector.mp4'
+  }
+  title="construct a perpendicular bisector"
+  border={true}
+/>
+
+## Copy a Segment
+
+To transfer a length from one segment to another location:
+
+1. Use **Compass** with the original segment's endpoints to set the radius
+2. Place the compass center at the new starting point
+3. The circle shows all points at the same distance from the center
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/copy-a-segment.mp4'}
+  title="copy a segment"
+  border={true}
+/>
+
+## Construct a Perpendicular Line Through a Point
+
+To create a line perpendicular to a given line through a point P:
+
+1. From point P, draw a **Circle** or a **Compass** arc (circle) that intersects the line at two points (A and B)
+2. From A and B, draw two **Compass** arcs (circle) with equal radius that intersect at point C
+3. Draw a **Line** through P and C
+4. This line is perpendicular to the original line
+
+:::tip
+In MotionGen, you can use the **Perpendicular Line** tool directly by selecting a segment or line and a point.
+:::
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/construct-a-perpendicular-line-through-a-point.mp4'
+  }
+  title="construct a perpendicular line through a point"
+  border={true}
+/>
+
+## Construct a Parallel Line Through a Point
+
+To create a line parallel to a given line through a point P:
+
+1. Draw a **Line** through P that intersects the original line at point A (creating a transversal)
+2. Copy the angle formed at A to point P using the **Copy an Angle** construction
+3. The new line through P at this angle is parallel to the original line
+
+:::tip
+In MotionGen, you can use the **Parallel Line** tool directly by selecting a segment or line and a point.
+:::
+
+<DocAnimation
+  src={
+    '/video/geometry-constructions-for-mechanism-design/construct-a-parallel-line-hrough-a-point.mp4'
+  }
+  title="construct a parallel line through a point"
+  border={true}
+/>
+
+## Bisect an Angle
+
+To divide an angle into two equal parts:
+
+1. Draw a **Circle** or a **Compass** arc (circle) from the vertex, intersecting both sides of the angle
+2. From each intersection point, draw equal arcs that intersect each other
+3. Draw a line from the vertex through the intersection of the arcs
+4. This line is the **Angle Bisector**
+
+:::tip
+In MotionGen, you can use the **Angle Bisector** tool directly by selecting three points that define the angle.
+:::
+
+<DocAnimation
+  src={'/video/geometry-constructions-for-mechanism-design/bisect-an-angle.mp4'}
+  title="bisect an angle"
+  border={true}
+/>
